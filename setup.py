@@ -159,6 +159,7 @@ setup(
     package_dir=PROJECTS,
     package_data={"detectron2.model_zoo": get_model_zoo_configs()},
     python_requires=">=3.7",
+    setup_requires=[pytorch>=1.8.0],
     install_requires=[
         # These dependencies are not pure-python.
         # In general, avoid adding dependencies that are not pure-python because they are not
